@@ -1,4 +1,4 @@
-#ohmyfood
+# Ohmyfood
 
 ## Étapes du projet
 1. [X] Mettre en place l'environnement de développement

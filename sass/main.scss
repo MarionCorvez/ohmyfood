@@ -1,3 +1,5 @@
+@charset 'utf-8';
+
 @import 'abstracts/variables';
 @import 'abstracts/functions';
 @import 'abstracts/mixins';
@@ -16,13 +18,13 @@
 @import 'layout/header';
 @import 'layout/footer';
 @import 'layout/sidebar';
-@import 'layout/forms';
+@import 'layout/form';
 
 @import 'components/buttons';
 @import 'components/carousel';
 @import 'components/cover';
 @import 'components/dropdown';
-@import 'components/thumnails';
+@import 'components/thumbnails';
 
 @import 'pages/home';
 @import 'pages/about';
@@ -30,3 +32,5 @@
 
 @import 'themes/theme';
 @import 'themes/admin';
+
+body { background-color: grey; }
