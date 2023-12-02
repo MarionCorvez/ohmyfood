@@ -6,3 +6,9 @@
 
 /* $Variables
    ==================================== */
+
+@use '../abstracts' as *;
+
+body {
+	font-size: $font-size--small;
+}

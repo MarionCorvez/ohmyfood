@@ -1,36 +1,9 @@
 @charset 'utf-8';
 
-@import 'abstracts/variables';
-@import 'abstracts/functions';
-@import 'abstracts/mixins';
-@import 'abstracts/placeholders';
-
-@import 'vendors/bootstrap';
-@import 'vendors/jquery-ui';
-
-@import 'base/reset';
-@import 'base/typography';
-@import 'base/base';
-@import 'base/animations';
-
-@import 'layout/navigation';
-@import 'layout/grid';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/sidebar';
-@import 'layout/form';
-
-@import 'components/buttons';
-@import 'components/carousel';
-@import 'components/cover';
-@import 'components/dropdown';
-@import 'components/thumbnails';
-
-@import 'pages/home';
-@import 'pages/about';
-@import 'pages/contact';
-
-@import 'themes/theme';
-@import 'themes/admin';
-
-body { background-color: grey; }
+/// Sass will gradually (in november 2023) phase out @import rule
+/// and recommands @use rule instead 
+@use 'abstracts/index';
+@use 'base/index';
+@use 'layout/index';
+@use 'components/index';
+@use 'pages/index';

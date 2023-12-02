@@ -1,0 +1,520 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mar",
+				"margin-left\tproperty"
+			],
+			[
+				"f",
+				"flex-start\tjustify-content"
+			],
+			[
+				"p",
+				"padding-bottom\tproperty"
+			],
+			[
+				"ma",
+				"margin\tproperty"
+			],
+			[
+				"fl",
+				"flex-wrap\tproperty"
+			],
+			[
+				"mrg",
+				"margin\tproperty"
+			],
+			[
+				"m",
+				"margin\tproperty"
+			],
+			[
+				"max",
+				"max-width\tproperty"
+			],
+			[
+				"flex",
+				"flex-wrap\tproperty"
+			],
+			[
+				"padd",
+				"padding-top\tproperty"
+			],
+			[
+				"marg",
+				"margin-top\tproperty"
+			],
+			[
+				"pa",
+				"padding\tproperty"
+			],
+			[
+				"fot",
+				"font-weight\tproperty"
+			],
+			[
+				"fo",
+				"font-size\tproperty"
+			],
+			[
+				"ali",
+				"align-items\tproperty"
+			],
+			[
+				"font",
+				"font-size\tproperty"
+			],
+			[
+				"li",
+				"line-height\tproperty"
+			],
+			[
+				"fon",
+				"font-size\tproperty"
+			],
+			[
+				"min",
+				"min-width\tproperty"
+			],
+			[
+				"max-",
+				"max-height\tproperty"
+			],
+			[
+				"pad",
+				"padding\tproperty"
+			],
+			[
+				"al",
+				"align-items\tproperty"
+			],
+			[
+				"i",
+				"inline-block\tdisplay"
+			],
+			[
+				"u",
+				"uppercase\ttext-transform"
+			],
+			[
+				"bor",
+				"border-bottom\tproperty"
+			],
+			[
+				"fle",
+				"flex-direction\tproperty"
+			],
+			[
+				"bac",
+				"background-color\tproperty"
+			],
+			[
+				"col",
+				"color\tproperty"
+			],
+			[
+				"ba",
+				"background-color\tproperty"
+			],
+			[
+				"gr",
+				"grid-column\tproperty"
+			],
+			[
+				"sp",
+				"space-between\tjustify-content"
+			],
+			[
+				"bord",
+				"border\tproperty"
+			],
+			[
+				"back",
+				"background-color\tproperty"
+			],
+			[
+				"co",
+				"cover\tobject-fit"
+			],
+			[
+				"text-a",
+				"text-align\tproperty"
+			],
+			[
+				"di",
+				"display\tproperty"
+			],
+			[
+				"d",
+				"display\tproperty"
+			],
+			[
+				"jus",
+				"justify-content\tproperty"
+			],
+			[
+				"c",
+				"cover\tobject-fit"
+			],
+			[
+				"ob",
+				"object-fit\tproperty"
+			],
+			[
+				"gri",
+				"grid-gap\tproperty"
+			],
+			[
+				"grid-",
+				"grid-template-columns\tproperty"
+			],
+			[
+				"ov",
+				"overflow-x\tproperty"
+			],
+			[
+				"wi",
+				"width\tproperty"
+			],
+			[
+				"munch",
+				"munch-cri-2"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"re",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"Git Add All",
+				"Package Control: Advanced Install Package"
+			],
+			[
+				"git",
+				"SublimeGit: Version"
+			],
+			[
+				"te",
+				"Terminal: Open"
+			],
+			[
+				"ter",
+				"Terminal: Open"
+			],
+			[
+				"Pac",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"AutoFileName: Quick Settings"
+			],
+			[
+				"ACKAGE CONTROL: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/denis/OneDrive/Documents/www/ohmyfood/index.html",
+		"/C/Users/denis/OneDrive/Documents/www/booki/index.html",
+		"/C/Users/denis/OneDrive/Documents/www/ohmyfood/restaurants/la-palette-du-gout.html",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/projet-sass/assets/scss/main.scss",
+		"/C/Users/denis/OneDrive/Documents/www/booki/css/style.css",
+		"/C/Users/denis/OneDrive/Documents/www/ohmyfood/assets/style.css",
+		"/C/Users/denis/OneDrive/Documents/www/ohmyfood/sass/main.scss",
+		"/C/Users/denis/OneDrive/Documents/www/ohmyfood/assets/css/style.css",
+		"/C/Users/denis/OneDrive/Documents/www/ohmyfood/ReadMe.md",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/OpenClassrooms/Projet 4/index.html",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/OpenClassrooms/Projet 4/ReadMe.md",
+		"/C/Users/denis/OneDrive/Documents/www/booki/README.md",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/OpenClassrooms/Projet 4/test.scss",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/OpenClassrooms/Projet 4/test.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/OpenClassrooms/Projet 3/booki-starter-code-master/css/style.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/OpenClassrooms/Projet 3/booki-starter-code-master/index.html",
+		"/C/Users/denis/OneDrive/Documents/www/riding-cities/index.html",
+		"/C/Users/denis/OneDrive/Documents/www/riding-cities/css/style.css",
+		"/C/Users/denis/OneDrive/Documents/www/robbie-lens/assets/css/style.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/00 - Projets/booki/index.html",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/00 - Projets/booki/styles/style.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/projet-light/main.css",
+		"/C/Users/denis/OneDrive/Documents/www/robbie-lens/assets/css/main.css",
+		"/C/Users/denis/OneDrive/Documents/www/robbie-lens/index.html",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/readme.md",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/OpenClassrooms/Projet 3/booki-starter-code-master/README.md",
+		"/C/Users/denis/Downloads/site Riding Citites/css/style.css",
+		"/C/Users/denis/OneDrive/Documents/www/robbie-lens/tarifs.html",
+		"/C/Users/denis/Downloads/site Riding Citites/README.md",
+		"/C/Users/denis/OneDrive/Documents/www/riding-cities/README.md",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/Clean code/index.html",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/Clean code/style.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/Clean code/components/table.html",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/Clean code/overlay-modal.html",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/Clean code/overlay-image.html",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/main.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/02 - Layout/02 - Grid/css/grid.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/02 - Layout/02 - Grid/css/grid-samples.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/02 - Layout/02 - Grid/grid-samples.html",
+		"/C/Users/denis/OneDrive/Documents/www/robbie-lens/README.md",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/02 - Layout/01 - Flex/index.html",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/02 - Layout/01 - Flex/main.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/projet-sass/assets/scss/themes/_theme.scss",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/projet-sass/assets/scss/themes/_admin.scss",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/index.html",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/projet-sass/index.html",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/projet-sass/assets/scss/pages/_home.scss",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/projet-sass/assets/scss/pages/_contact.scss",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/projet-sass/assets/scss/pages/_about.scss",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/projet-sass/assets/scss/layout/_grid.scss",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/projet-sass/assets/scss/layout/_header.scss",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/projet-sass/assets/scss/layout/_navigation.scss",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/projet-sass/assets/scss/layout/_sidebar.scss",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/projet-sass/assets/scss/layout/_footer.scss",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/projet-sass/assets/scss/layout/_form.scss",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/projet-sass/assets/scss/components/_thumbnails.scss",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/projet-sass/assets/scss/components/_dropdown.scss",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/projet-sass/assets/scss/components/_cover.scss",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/projet-sass/assets/scss/components/_carousel.scss",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/projet-sass/assets/scss/components/_buttons.scss",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/projet-sass/assets/scss/base/_typography.scss",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/projet-sass/assets/scss/base/_animations.scss",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/projet-sass/assets/scss/base/_reset.scss",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/projet-sass/assets/scss/base/_base.scss",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/projet-sass/assets/scss/components/_medias.scss.scss",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/02 - Layout/Demo/slider/slider.html",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/02 - Layout/Demo/slider/slider-treehouse.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/02 - Layout/Demo/slider/slider.css",
+		"/C/Users/denis/OneDrive/Documents/www/robbie-lens-photographie/robbie-lens-photographie",
+		"/C/Users/denis/OneDrive/Documents/www/robbie-lens-photographie/README.md",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/02 - Layout/Demo/portfolio/test-centre.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/03 - Components/04 - Card/bem.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/02 - Layout/assets/css/colors.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/02 - Layout/assets/css/tricks-ok.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/www/css/components/link.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/02 - Layout/01 - Flex/flex.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/00 - Projets/01 - Marvelapp/styles/style.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/www/css/base/main.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/variables.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/naming-components.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/01 - Templates/main.css",
+		"/C/Users/denis/OneDrive/Documents/04 - Projets/Writing/98 - Instagram/instagram.html",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/emmet.html",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/bem.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/01 - Templates/ui-guidelines.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/08 - Fonts/fonts.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/Tailwind/css/style.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/00 - References/sarah-soueidan.html",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/00 - References/lmf/wp-content/themes/lamutualite/assets/css/styles.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/00 - References/lmf/wp-content/themes/lamutualite/www/T000-homepage.html",
+		"/C/Users/denis/OneDrive/Bureau/Yummy Nouilles/index.html",
+		"/C/Users/denis/OneDrive/Bureau/Yummy Nouilles/styles/main.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/project/styles/style.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/project/index.html",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/02 - Layout/04 - Media queries/responsive.css",
+		"/C/Users/denis/OneDrive/Bureau/Yummy Nouilles/assets/styles/main.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/01 - Booki/index.html",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/02 - Layout/assets/css/main.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/01 - Marvelapp/styles/style.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/01 - Marvelapp/index.html",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/02 - Layout/assets/css/layout-fluid.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/02 - Layout/layout-fluid.html",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/01 - Marvelapp/style.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/07 - Demos/01 - Patti/index.html",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/07 - Demos/01 - Patti/assets/css/style.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/03 - Components/01 - Nav/sticky-nav-bas.html",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/02 - Layout/05 - Fixed/fixed.html",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/02 - Layout/05 - Fixed/fixed.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/02 - Layout/tuto/index.html",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/02 - Layout/tuto/style.css",
+		"/C/Users/denis/Downloads/reset-script.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/02 - Layout/assets/css/tricks.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/02 - Layout/assets/css/-main.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/02 - Layout/assets/css/reset.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/02 - Layout/02 - Grid/index.html",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/01 - Templates/template.html",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/02 - Layout/nav.html",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/02 - Layout/nav.css",
+		"/C/Users/denis/Downloads/style.css",
+		"/C/Users/denis/Downloads/index.html",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/01 - Templates/Cours-Emmet/1.Fichiers-de-depart/1.Abreviations-et-astuces/1.Abreviations-de-base.html",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/01 - Templates/Cours-Emmet/2.Code-source/3.CSS-et-JavaScript/6.CSS-avec-emmet.css",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/01 - Templates/Cours-Emmet/2.Code-source/2.Actions/7.Evaluate-math-expression.html",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/01 - Templates/Cours-Emmet/2.Code-source/2.Actions/6.Update-img-size.html",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/01 - Templates/Cours-Emmet/2.Code-source/2.Actions/5.RemoveTag.html",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/01 - Templates/Cours-Emmet/2.Code-source/2.Actions/4.Select.html",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/01 - Templates/Cours-Emmet/2.Code-source/2.Actions/3.Go-to-matching-pair.html",
+		"/C/Users/denis/OneDrive/Documents/08 - Dev/01 - Templates/Cours-Emmet/2.Code-source/2.Actions/2.Balance-inward-outward.html"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
