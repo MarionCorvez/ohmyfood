@@ -3,7 +3,7 @@
   $Flexbox
   ========================================
 */
-.section-header, .section-location, .section-cover, .card-operation, .card-operation__content {
+.section-header, .section-location, .section-cover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -31,6 +31,55 @@ html {
 *::after {
   box-sizing: inherit;
   margin: 0;
+}
+
+/* Inherit font on Form Elements for a Better Mobile Experience */
+h1,
+input,
+button,
+select,
+textarea,
+::placeholder {
+  font: inherit;
+  font-size: var(--f-size-p);
+  color: currentColor;
+  opacity: 1; /* Fix Firefox default style */
+}
+
+a,
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+ol, ul, menu {
+  list-style: none;
+}
+
+/* Style broken images */
+img,
+img::before,
+img::after {
+  position: relative;
+  vertical-align: middle;
+  shape-margin: 1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  text-align: center;
+  font: inherit;
+  font-style: italic;
+}
+
+img::before {
+  content: "We're sorry, the image below is broken :(";
+}
+
+img::after {
+  content: "(url: " attr(src) ")";
 }
 
 /*
@@ -86,10 +135,6 @@ body {
   color: hsl(0, 0%, 20%);
 }
 
-a {
-  text-decoration: none;
-}
-
 .section-footer__links {
   color: hsl(0, 0%, 100%);
 }
@@ -141,13 +186,14 @@ a {
 .button {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
-  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: linear-gradient(#ff79da, #9356dc);
   padding: 13px 18.75px;
   color: hsl(0, 0%, 100%);
+  transition: 0.3s;
 }
 .button:hover {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
+  background: linear-gradient(#ff90e7, #a16eff);
 }
 
 /*
@@ -198,31 +244,43 @@ a {
   padding: 48px 20px 68px 20px;
 }
 
+.panel-operation {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-top: 26px;
+}
+
 .card-operation {
-  width: 100%;
+  display: flex;
+  align-items: end;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  background-color: hsl(0, 0%, 96%);
+  padding: 34px 27px;
 }
 .card-operation__number {
   position: relative;
-  left: 10px;
+  right: 40px;
   border-radius: 25px;
   background-color: hsl(267, 65%, 60%);
   padding: 4px 8px;
   color: hsl(0, 0%, 100%);
   font-size: 14px;
 }
-.card-operation__content {
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-  border-radius: 20px;
-  background-color: hsl(0, 0%, 96%);
-  padding: 34px 27px;
-}
-
 .card-operation__icon {
-  color: hsl(0, 0%, 49%);
+  fill: hsl(0, 0%, 49%);
 }
-
 .card-operation__details {
   padding-left: 20px;
+}
+
+.card-operation:hover .card-operation__icon {
+  fill: hsl(267, 65%, 60%);
+}
+
+.card-operation:hover .card-operation__details {
+  color: hsl(267, 65%, 60%);
 }
 
 /*
