@@ -1,0 +1,21 @@
+/*
+  ========================================
+  $Buttons
+  ========================================
+*/
+
+/* $Variables
+   ==================================== */
+
+@use '../globals' as g;
+@use '../util' as u;
+
+ .btn,
+ %btn {
+ 	color: g.$blush-pink;
+ 	@extend %wrapper-grid;
+ 	&__label {
+ 		@extend %btn;
+ 		font-size: 2rem;
+ 	}
+ }

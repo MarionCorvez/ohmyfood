@@ -1,0 +1,39 @@
+/// Placeholders
+
+
+/*
+  ========================================
+  $Flexbox
+  ========================================
+*/
+
+%flex--center {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+%flex--column {
+  flex-direction: column;
+}
+
+%wrapper-flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+/*
+  ========================================
+  $Grid layout
+  ========================================
+*/
+
+/// Placeholder grid
+%wrapper-grid {
+  display: grid;
+  gap: 2rem;
+}
+

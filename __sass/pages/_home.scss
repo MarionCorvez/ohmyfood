@@ -1,14 +1,15 @@
 /*
   ========================================
-  $Navigation
+  $Home
   ========================================
 */
 
 /* $Variables
    ==================================== */
 
-@use '../abstracts' as a;
-@use '../base' as b;
-@use '../components' as c;
-@use '../pages' as p;
+   @use '../util' as u;
+   @use '../globals' as g;
 
+  .class-text {
+  	font: u.$font;
+  }

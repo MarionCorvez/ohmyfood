@@ -3,8 +3,8 @@
 /// Sass will gradually (in november 2023) phase out @import rule
 /// and recommands @use rule instead
 
-@forward 'abstracts';
-@forward 'base';
+@forward 'globals';
+@forward 'util';
 @forward 'layout';
 @forward 'components';
 @forward 'pages';

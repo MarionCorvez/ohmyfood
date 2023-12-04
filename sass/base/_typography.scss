@@ -4,11 +4,96 @@
   ========================================
 */
 
-/* $Variables
-   ==================================== */
+@use '../abstracts' as a;
 
-@use '../abstracts' as *;
+// $Variables
 
-body {
-	font-size: $font-size--small;
+:root {
+  --f-size-s: clamp(1rem, 0.227vw + 0.943rem, 1.125rem);    	// body: 16px
+	--f-size-m: clamp(1.063rem, 0.227vw + 1.006rem, 1.188rem);	// 17px
+	--f-size-l: clamp(1.125rem, 0.227vw + 1.068rem, 1.25rem);		// 18px
+	--f-size-xl: clamp(1.5rem, 0.227vw + 1.443rem, 1.625rem);		// 24px
+	--f-size-xxl: clamp(1.875rem, 0.227vw + 1.818rem, 2rem);		// logo: 30px
+  --l-height:  1.1;
 }
+
+// location / button / footer links / card-operation__content
+body {
+	background-color: a.$white;
+	color: a.$black;
+	font-family: 'Roboto', sans-serif;
+	font-size: var(--f-size-s);
+	font-weight: 500;
+	line-height: var(--l-height);
+}
+
+.section-cover__heading,
+.heading-2,
+.heading-3 {
+	font-weight: 700;
+}
+
+.section-cover__subtitle,
+.card-restaurant__details,
+.cover__subtitle {
+	font-weight: 300;
+}
+
+.section-cover__heading,
+.heading-2 {
+	font-size: var(--f-size-xl);
+}
+
+.heading-3,
+.section-cover__subtitle {
+	font-size: var(--f-size-l);
+}
+
+.card-restaurant__details {
+	font-size: var(--f-size-m);
+}
+
+.cover__subtitle {
+	color: a.$mine-shaft;
+}
+
+a {
+ 	text-decoration: none;
+}
+
+
+.section-footer__links {
+	color: a.$white;
+}
+
+
+// Texts using Shrikhand font
+
+@font-face {
+  font-family: 'Shrikhand';
+  src:
+		local("Shrikhand"),
+    url("../assets/fonts/Shrikhand-Regular.ttf");
+}
+
+%shrikhand {
+	font-family: 'Shrikhand', serif;
+	font-weight: 400;
+}
+
+	.header__logo {
+		@extend %shrikhand;
+		color: a.$cod-gray;
+		font-size: 30px;
+	}
+
+	.footer__logo {
+		@extend %shrikhand;
+		font-size: 18px;
+	}
+
+	.restaurant__heading {
+		@extend %shrikhand;
+		color: a.$cod-gray;
+		font-size: 28px;
+	}

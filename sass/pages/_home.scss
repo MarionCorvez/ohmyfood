@@ -4,5 +4,76 @@
   ========================================
 */
 
-/* $Variables
+/* $Section location
    ==================================== */
+
+@use '../abstracts' as a;
+
+.section-location {
+	@extend %flex--center;
+	background-color: a.$gallery;
+	padding: 15px 0;
+	color: a.$mine-shaft;
+
+	&__content {
+		margin-left: 17px;
+	}
+}
+
+
+/* $Section cover
+   ==================================== */
+
+.section-cover {
+	@extend %flex--center;
+	@extend %flex--column;
+	background-color: a.$wild-sand;
+	padding: 39px 26px 57px 26px;
+	text-align: center;
+}
+
+.section-cover__subtitle {
+	padding: 16px 0 27px 0;
+}
+
+
+/* $Section operation
+   ==================================== */
+
+.section-operation {
+	padding: 48px 20px 68px 20px;
+}
+
+
+.panel-operation {}
+
+.card-operation {
+	@extend %flex--center;
+	width: 100%;
+
+	&__number {
+		position: relative;
+		left: 10px;
+		border-radius: 25px;
+		background-color: a.$medium-purple;
+		padding: 4px 8px;
+		color: a.$white;
+		font-size: 14px;
+	}
+
+	&__content {
+		@extend %flex--center;
+		box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+		border-radius: 20px;
+		background-color: a.$wild-sand;
+		padding: 34px 27px;
+	}
+}
+
+.card-operation__icon {
+	color: a.$gray;	
+}
+
+.card-operation__details {
+	padding-left: 20px;
+}

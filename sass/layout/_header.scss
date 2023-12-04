@@ -7,8 +7,10 @@
 /* $Variables
    ==================================== */
 
+@use '../abstracts' as a;
 
-main {
-	display: flex;
-	margin: 34px;
+.section-header {
+	@extend %flex--center;
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+	padding: 14px 0;
 }

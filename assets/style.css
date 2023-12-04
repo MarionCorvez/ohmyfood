@@ -1,30 +1,120 @@
 /*
   ========================================
-  $Reset
+  $Flexbox
   ========================================
 */
-/* $Variables
-   ==================================== */
+.section-header, .section-location, .section-cover, .card-operation, .card-operation__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-cover {
+  flex-direction: column;
+}
+
+/*
+  ========================================
+  $Grid layout
+  ========================================
+*/
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  text-size-adjust: none;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
 /*
   ========================================
   $Typography
   ========================================
 */
-/* $Variables
-   ==================================== */
-body {
-  font-size: 2rem;
+:root {
+  --f-size-s: clamp(1rem, 0.227vw + 0.943rem, 1.125rem);
+  --f-size-m: clamp(1.063rem, 0.227vw + 1.006rem, 1.188rem);
+  --f-size-l: clamp(1.125rem, 0.227vw + 1.068rem, 1.25rem);
+  --f-size-xl: clamp(1.5rem, 0.227vw + 1.443rem, 1.625rem);
+  --f-size-xxl: clamp(1.875rem, 0.227vw + 1.818rem, 2rem);
+  --l-height: 1.1;
 }
 
-/*
-  ========================================
-  $Base
-  ========================================
-*/
-/* $Variables
-   ==================================== */
 body {
-  background-color: grey;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 0%);
+  font-family: "Roboto", sans-serif;
+  font-size: var(--f-size-s);
+  font-weight: 500;
+  line-height: var(--l-height);
+}
+
+.section-cover__heading,
+.heading-2,
+.heading-3 {
+  font-weight: 700;
+}
+
+.section-cover__subtitle,
+.card-restaurant__details,
+.cover__subtitle {
+  font-weight: 300;
+}
+
+.section-cover__heading,
+.heading-2 {
+  font-size: var(--f-size-xl);
+}
+
+.heading-3,
+.section-cover__subtitle {
+  font-size: var(--f-size-l);
+}
+
+.card-restaurant__details {
+  font-size: var(--f-size-m);
+}
+
+.cover__subtitle {
+  color: hsl(0, 0%, 20%);
+}
+
+a {
+  text-decoration: none;
+}
+
+.section-footer__links {
+  color: hsl(0, 0%, 100%);
+}
+
+@font-face {
+  font-family: "Shrikhand";
+  src: local("Shrikhand"), url("../assets/fonts/Shrikhand-Regular.ttf");
+}
+.restaurant__heading, .footer__logo, .header__logo {
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+}
+
+.header__logo {
+  color: hsl(0, 0%, 6%);
+  font-size: 30px;
+}
+
+.footer__logo {
+  font-size: 18px;
+}
+
+.restaurant__heading {
+  color: hsl(0, 0%, 6%);
+  font-size: 28px;
 }
 
 /*
@@ -43,68 +133,26 @@ body {
    ==================================== */
 /*
   ========================================
-  $Grid
+  $Components
   ========================================
 */
-/* $Variables
+/* $Buttons
    ==================================== */
-/*
-  ========================================
-  $Header
-  ========================================
-*/
-/* $Variables
-   ==================================== */
-main {
-  display: flex;
-  margin: 34px;
+.button {
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  padding: 13px 18.75px;
+  color: hsl(0, 0%, 100%);
+}
+.button:hover {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%), linear-gradient(201deg, #9356DC -5.2%, #FF79DA 110.74%);
 }
 
 /*
   ========================================
-  $Footer
-  ========================================
-*/
-/* $Variables
-   ==================================== */
-/*
-  ========================================
-  $Sidebar
-  ========================================
-*/
-/* $Variables
-   ==================================== */
-/*
-  ========================================
-  $Form
-  ========================================
-*/
-/* $Variables
-   ==================================== */
-/*
-  ========================================
-  $Buttons
-  ========================================
-*/
-/* $Variables
-   ==================================== */
-/*
-  ========================================
-  $Carousel
-  ========================================
-*/
-/* $Variables
-   ==================================== */
-/*
-  ========================================
   $Cover
-  ========================================
-*/
-/* $Variables
-   ==================================== */
-/*
-  ========================================
-  $Dropdown
   ========================================
 */
 /* $Variables
@@ -121,8 +169,62 @@ main {
   $Home
   ========================================
 */
-/* $Variables
+/* $Section location
    ==================================== */
+.section-location {
+  background-color: hsl(0, 0%, 91%);
+  padding: 15px 0;
+  color: hsl(0, 0%, 20%);
+}
+.section-location__content {
+  margin-left: 17px;
+}
+
+/* $Section cover
+   ==================================== */
+.section-cover {
+  background-color: hsl(0, 0%, 96%);
+  padding: 39px 26px 57px 26px;
+  text-align: center;
+}
+
+.section-cover__subtitle {
+  padding: 16px 0 27px 0;
+}
+
+/* $Section operation
+   ==================================== */
+.section-operation {
+  padding: 48px 20px 68px 20px;
+}
+
+.card-operation {
+  width: 100%;
+}
+.card-operation__number {
+  position: relative;
+  left: 10px;
+  border-radius: 25px;
+  background-color: hsl(267, 65%, 60%);
+  padding: 4px 8px;
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
+}
+.card-operation__content {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  background-color: hsl(0, 0%, 96%);
+  padding: 34px 27px;
+}
+
+.card-operation__icon {
+  color: hsl(0, 0%, 49%);
+}
+
+.card-operation__details {
+  padding-left: 20px;
+}
+
 /*
   ========================================
   $About
@@ -132,24 +234,24 @@ main {
    ==================================== */
 /*
   ========================================
-  $Contact
+  $Header
   ========================================
 */
 /* $Variables
    ==================================== */
+.section-header {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  padding: 14px 0;
+}
+
 /*
   ========================================
-  $Theme
+  $Footer
   ========================================
 */
-/* $Variables
-   ==================================== */
-/*
-  ========================================
-  $Admin
-  ========================================
-*/
-/* $Variables
-   ==================================== */
+.section-footer {
+  background-color: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 100%);
+}
 
 /*# sourceMappingURL=style.css.map */
