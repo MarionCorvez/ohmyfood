@@ -54,6 +54,7 @@ button {
 
 ol, ul, menu {
   list-style: none;
+  padding: 0;
 }
 
 /* Style broken images */
@@ -345,8 +346,29 @@ body {
   ========================================
 */
 .section-footer {
+  padding: 22px 25px;
   background-color: hsl(0, 0%, 20%);
   color: hsl(0, 0%, 100%);
+}
+.section-footer ul {
+  margin-top: 16px;
+}
+.section-footer__item {
+  padding-top: 7px;
+}
+.section-footer__icon {
+  fill: hsl(0, 0%, 100%);
+}
+.section-footer__links--icon {
+  padding-left: 11px;
+}
+
+.section-footer__item:hover .section-footer__links {
+  color: hsl(267, 65%, 60%);
+}
+
+.section-footer__item:hover .section-footer__icon {
+  fill: hsl(267, 65%, 60%);
 }
 
 /*# sourceMappingURL=style.css.map */

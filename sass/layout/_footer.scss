@@ -7,6 +7,31 @@
 @use '../abstracts' as a;
 
 .section-footer {
+	padding: 22px 25px;
 	background-color: a.$mine-shaft;
 	color: a.$white;
+
+		& ul {
+			margin-top: 16px;
+		}
+
+			&__item {
+				padding-top: 7px;
+			}
+
+				&__icon {
+					fill: a.$white;
+				}
+
+				&__links--icon {
+					padding-left: 11px;
+				}
+}
+
+.section-footer__item:hover .section-footer__links {
+	color: a.$medium-purple;
+}
+
+.section-footer__item:hover .section-footer__icon {
+	fill: a.$medium-purple;
 }
