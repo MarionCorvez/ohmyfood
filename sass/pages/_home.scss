@@ -86,3 +86,53 @@
 		.card-operation:hover .card-operation__details {
 			color: a.$medium-purple;
 		}
+
+
+/* $Section restaurants
+   ==================================== */
+
+.section-restaurants {
+	padding: 54px 17px 66px 17px;
+	background-color: a.$wild-sand;
+
+}
+
+	.panel-restaurants {
+		padding-top: 10px;
+	}
+
+		.card-restaurant {
+			position: relative;
+			margin-top: 18px;
+			box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+			border-radius: 15px;
+			background: a.$white;
+
+			&__image {
+				border-radius: 15px 15px 0 0;
+			}
+
+			&__label {
+				position: absolute;
+				top: 15px;
+				right: 15px;
+				background-color: a.$morning-glory;
+				padding: 7px 9px;
+				color: a.$deep-sea;
+			}
+
+			&__content {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 16px 25px 16px 16px;
+			}	
+
+				&__details {}
+					&__headline {}
+					&__subhead {
+						padding-top: 5px;
+					}
+				&__icon {}
+
+		}
