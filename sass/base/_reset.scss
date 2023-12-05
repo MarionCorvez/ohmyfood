@@ -1,5 +1,11 @@
 /// $Reset
 
+/*
+  ========================================
+  $Reset
+  ========================================
+*/
+
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -44,7 +50,7 @@ img::before,
 img::after {
   position: relative;
   vertical-align: middle; // replaces display: block & removes extra space below image
-	shape-margin: 1rem; // space for float
+	// shape-margin: 1rem; // space for float
 	background-repeat: no-repeat;
 	background-size: cover;
   width: 100%;

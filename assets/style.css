@@ -19,6 +19,11 @@
   $Grid layout
   ========================================
 */
+/*
+  ========================================
+  $Reset
+  ========================================
+*/
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -63,7 +68,6 @@ img::before,
 img::after {
   position: relative;
   vertical-align: middle;
-  shape-margin: 1rem;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -100,9 +104,13 @@ body {
   background-color: hsl(0, 0%, 100%);
   color: hsl(0, 0%, 0%);
   font-family: "Roboto", sans-serif;
+  line-height: var(--l-height);
+}
+
+body,
+.card-operation__details {
   font-size: var(--f-size-s);
   font-weight: 500;
-  line-height: var(--l-height);
 }
 
 .section-cover__heading,
@@ -212,7 +220,7 @@ body {
    ==================================== */
 /*
   ========================================
-  $Home
+  $Homepage
   ========================================
 */
 /* $Section location
@@ -303,14 +311,16 @@ body {
 }
 .card-restaurant__image {
   border-radius: 15px 15px 0 0;
+  max-height: 225px;
 }
 .card-restaurant__label {
   position: absolute;
   top: 15px;
   right: 15px;
+  z-index: 99;
   background-color: hsl(165, 55%, 74%);
   padding: 7px 9px;
-  color: hsl(165, 100%, 26%);
+  color: hsl(165, 100%, 20%);
 }
 .card-restaurant__content {
   display: flex;
@@ -323,10 +333,10 @@ body {
 }
 /*
   ========================================
-  $About
+  $Restaurant page
   ========================================
 */
-/* $Variables
+/* $Section
    ==================================== */
 /*
   ========================================

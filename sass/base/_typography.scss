@@ -22,9 +22,13 @@ body {
 	background-color: a.$white;
 	color: a.$black;
 	font-family: 'Roboto', sans-serif;
+	line-height: var(--l-height);
+}
+
+body,
+%font-s {
 	font-size: var(--f-size-s);
 	font-weight: 500;
-	line-height: var(--l-height);
 }
 
 .section-cover__heading,
