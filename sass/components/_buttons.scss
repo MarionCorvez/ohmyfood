@@ -9,28 +9,39 @@
 
 @use '../abstracts' as a;
 
-.button {
-	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+
+// Used as an anchor on homepage
+// and as a submit button on restaurant page
+.main-cta {
+  position: relative;
+  z-index: 1;
+  color: a.$white;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
 	border-radius: 25px;
-	background: linear-gradient(#ff79da, #9356dc);
+  background: linear-gradient(a.$blush-pink, a.$medium-purple);
 	padding: 13px 18.75px;
-	color: a.$white;
-	transition: 0.3s;
 
-	&:hover {
-		box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
-		background: linear-gradient(#ff90e7, #a16eff);
+  &:hover {
+    &::after {
+      opacity: 1;
+  	}
 	}
-}
 
-// Code du cours
-// .btn {
-/* 	transform: scale(1); 
-    transition-property: transform;
-    transition-duration: 400ms;
-   	/* transition: transform 400ms; 
-}
+	&::after {
+		content: "";
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  opacity: 0;
+	  z-index: -1;
+	  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+	  border-radius: 25px;
+	  background: linear-gradient(
+	  	lighten(a.$blush-pink, 4%), 
+	  	lighten(a.$medium-purple, 4%));
+	  transition: opacity 200ms;
+	}
 
-    .btn:hover {
-      transform: scale(1.15);
-    }*/
+}

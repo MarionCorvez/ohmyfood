@@ -6,3 +6,34 @@
 
 /* $Variables
    ==================================== */
+
+@media (prefers-reduced-motion: no-preference) {
+
+  .btn {
+    // 'vibrate' keyframes are defined elsewhere
+    animation: vibrate 0.3s linear infinite both;
+  }
+
+  .some-element {
+    animation: bounce 1200ms;
+  }
+
+// base pour l'affichage du menu coché
+.btn-4:active + .box-2 {
+  transform: translate(0, 0);
+}
+
+.box-2 {
+  background-color: #3e3e3e;
+  color: #fff;
+  margin-top: 3rem;
+
+  width: 100px;
+  height: 100px;
+  // ou transform-origin: right;
+  transform: translate(100%, 0);
+  transition: transform 330ms ease-in-out;
+}
+
+
+}
