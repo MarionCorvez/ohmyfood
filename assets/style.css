@@ -300,6 +300,11 @@ body,
 .card-operation__details {
   padding-left: 20px;
 }
+@media screen and (width > 1024px) {
+  .card-operation {
+    width: 30%;
+  }
+}
 
 .card-operation:hover .card-operation__icon {
   fill: hsl(267, 65%, 60%);
@@ -390,6 +395,12 @@ body,
   flex-direction: column;
   gap: 25px;
   padding-top: 26px;
+}
+@media screen and (width > 1024px) {
+  .panel-operation {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 /* $Section restaurants

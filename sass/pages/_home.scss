@@ -51,8 +51,13 @@
 		flex-direction: column;
 		gap: 25px;
 		padding-top: 26px;
-	}
 
+		@include a.bp(large) {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+	}
 
 
 

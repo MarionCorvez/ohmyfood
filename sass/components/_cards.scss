@@ -38,11 +38,16 @@
   	@extend %font-s;
   }
 
+  @include a.bp(large) {
+    width: 30%;
+  }
+
 }
 
 .card-operation:hover .card-operation__icon {
   fill: a.$medium-purple;
 }
+
 
 
 /* $Card restaurant
