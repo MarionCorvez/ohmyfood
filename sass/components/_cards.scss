@@ -83,26 +83,4 @@
   	padding-top: 5px;
 	}
 
-	&__icon,
-	&__icon:not(:hover) {
-		opacity: 1;
-    font-size: 1.5rem;
-    color: white;
-  //-webkit-background-clip: text;
- //-webkit-text-fill-color: transparent;  
-    -webkit-text-stroke: 1px black;
-    -webkit-background-clip: text;
-    background-clip: text;
-    transition: background 350ms ease-in-out;
-	&:hover {
-		opacity: 0.8;
-	  color: transparent;
-	  -webkit-text-stroke: white;
-	  background: linear-gradient(#9356DC, #FF79DA);
-	  -webkit-background-clip: text;
-	  background-clip: text;
-    transition: opacity 350ms ease-in-out;
-	}
-	}
-
 }
