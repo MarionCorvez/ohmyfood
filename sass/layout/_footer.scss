@@ -7,31 +7,63 @@
 @use '../abstracts' as a;
 
 .section-footer {
-	padding: 22px 25px;
+	padding: var(--pad-m) var(--pad-b);
 	background-color: a.$mine-shaft;
 	color: a.$white;
-
-		& ul {
-			margin-top: 16px;
-		}
-
-			&__item {
-				padding-top: 7px;
-			}
-
-				&__icon {
-					fill: a.$white;
-				}
-
-				&__links--icon {
-					padding-left: 11px;
-				}
 }
 
-.section-footer__item:hover .section-footer__links {
+.panel-footer {
+	@include a.bp(large) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		align-items: baseline;
+	}
+}
+
+.footer {
+
+	&__logo {
+		@include a.bp(large) {
+			order: 2;
+			margin-left: 16px;
+		}
+	}
+
+	&__list {
+		margin-top: 16px;
+
+		@include a.bp(medium) {
+			display: flex;
+		}
+		@include a.bp(large) {
+			margin-top: 0;
+		}
+	}
+
+		&__item {
+			padding-top: 7px;
+
+			@include a.bp(medium) {
+				padding-top: 0;
+				padding-right: 24px;
+			}
+		}
+
+		&__icon {
+			fill: a.$white;
+		}
+
+		&__link--icon {
+			padding-left: 11px;
+		}
+
+}
+
+.footer__item:hover .footer__link {
 	color: a.$medium-purple;
 }
 
-.section-footer__item:hover .section-footer__icon {
+.footer__item:hover .footer__icon {
 	fill: a.$medium-purple;
 }

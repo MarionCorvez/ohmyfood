@@ -4,53 +4,45 @@
 /// $Colors
 
 // button color 1 / button list / icon color :hover
-$medium-purple: hsl(267, 65%, 60%);
-// rgb(147, 86, 220)
+$medium-purple: #9356DC;
 
 // button color 2
-$blush-pink: hsl(316, 100%, 73%);
-// rgb(255, 121, 218)
+$blush-pink: #FF79DA;
 
 // block new background / item checked / underline
-$morning-glory: hsl(165, 55%, 74%);
-// rgb(153, 226, 208)
+$morning-glory: #99E2D0;
 
 // block new text
 // color darkened for accessibility purpose
-$deep-sea: hsl(165, 100%, 20%);
+$tropical-rain-forest: #01705C;
 
 // list icon color
-$gray: hsl(0, 0%, 49%);
-// rgb(126, 126, 126)
-
-// color not found
-$malibu: hsl(206, 91%, 75%);
-// rgb(137, 200, 250)
-
-// color not found
-$midnight-blue: hsl(206, 100%, 20%);
-// rgb(0, 58, 104)
+$gray: #7E7E7E;
 
 // logo header / restaurant heading
-$cod-gray: hsl(0, 0%, 6%);
-// rgb(16, 16, 16)
+$cod-gray: #101010;
 
 // text sur fond clair / entrées du menu
-$black: hsl(0, 0%, 0%);
-// rgb(0, 0, 0)
+$black: #000;
 
 // background body / button text / background card
-$white: hsl(0, 0%, 100%);
-// rgb(255, 255, 255)
+$white: #fff;
 
 // background location
-$gallery: hsl(0, 0%, 91%);
-// rgb(234, 234, 234)
+$gallery: #EAEAEA;
 
 // background footer / text subtitle cover / text location / couleur flèche (ajouter hover)
-$mine-shaft: hsl(0, 0%, 20%);
-// rgb(53, 53, 53)
+$mine-shaft: #353535;
 
 // background cover / background item fonctionnement / background restaurant
-$wild-sand: hsl(0, 0%, 96%);
-// rgb(246, 246, 246)
+$wild-sand: #F6F6F6;
+
+
+// Gutters
+
+:root {
+	--pad-tb-xs: 	clamp(14px, 3vh, 30px);		// header
+	--pad-m: 			clamp(22px, 4vw, 40px);		// sections
+	--pad-b: 			clamp(25px, 5vh, 50px);		// footer
+	--pad-xb: 		clamp(60px, 3vh, 30px);		// restaurant
+}

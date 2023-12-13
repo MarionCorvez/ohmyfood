@@ -18,15 +18,32 @@
   border-radius: 20px;
   background-color: a.$wild-sand;
   padding: 34px 27px;
+  cursor: pointer;
+
+  @include a.bp(medium) {
+    align-items: center;
+    padding: 28px 15px;
+
+  }
+
+  @include a.bp(large) {
+    &:first-child {
+      margin-left: 12px; // replace card in layout
+    }
+  }
 
   &__number {
   	position: relative;
-  	right: 40px;
+  	right: 38px; // place item on border
   	border-radius: 25px;
   	background-color: a.$medium-purple;
   	padding: 4px 8px;
   	color: a.$white;
   	font-size: 14px;
+
+    @include a.bp(medium) {
+      right: 28px;
+    }
   }
 
   &__icon {
@@ -34,7 +51,7 @@
   }
 
   &__details {
-  	padding-left: 20px;
+  	padding-left: clamp(20px, 1vw, 10px);
   	@extend %font-s;
   }
 
@@ -60,6 +77,11 @@
 	border-radius: 15px;
 	background: a.$white;
 
+  @include a.bp(medium) {
+    flex: 1 1 47%;
+    max-width: 47%;
+  }
+
 	&__image {
   	border-radius: 15px 15px 0 0;
   	max-height: 225px;
@@ -72,7 +94,7 @@
   	z-index: 99;
   	background-color: a.$morning-glory;
   	padding: 7px 9px;
-  	color: a.$deep-sea;
+  	color: a.$tropical-rain-forest;
 	}
 
 	&__content {
@@ -82,8 +104,10 @@
   	padding: 16px 25px 16px 16px;
 	}	
 
-	&__details {}
-	&__headline {}
+	&__headline a:hover {
+    color: a.$medium-purple;
+  }
+  
 	&__subhead {
   	padding-top: 5px;
 	}
