@@ -9,14 +9,21 @@
 /* $Section cover
    ==================================== */
 
-
+.section-cover {
+	
+}
 
 
 /* $Section restaurant
    ==================================== */
 
 .section-restaurant {
-	padding: 32px 17px 40px 17px;
+	position: relative;
+	bottom: 60px;
+	z-index: 1;
+	border-radius: 60px 60px 0 0;
+	background-color: a.$wild-sand;
+	padding: 52px 17px 40px 17px;
 }
 
 .restaurant {
