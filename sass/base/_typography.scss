@@ -31,30 +31,43 @@ body,
 	font-weight: 500;
 }
 
-.section-cover__heading,
+.section-hero__heading,
 .heading-2,
-.heading-3 {
+.heading-3,
+.menu__pricing {
 	font-weight: 700;
 }
 
-.section-cover__subtitle,
+.section-hero__subtitle,
 .card-restaurant__subhead,
-.cover__subtitle {
+.cover__subtitle,
+.menu__subhead {
 	font-weight: 300;
 }
 
-.section-cover__heading,
+.section-hero__heading,
 .heading-2 {
 	font-size: var(--f-size-xl);
 }
 
 .heading-3,
-.section-cover__subtitle {
+.section-hero__subtitle,
+.menu__heading {
 	font-size: var(--f-size-l);
 }
 
+
 .card-restaurant__subhead {
 	font-size: var(--f-size-m);
+}
+
+.restaurant__heading-2 {
+	font-size: var(--f-size-m);
+	font-weight: 300;
+	text-transform: uppercase;
+	border-bottom: 3px solid a.$morning-glory;
+	width: 40px;
+	padding-bottom: 5px;
 }
 
 .cover__subtitle {
@@ -91,7 +104,7 @@ body,
 		font-size: 18px;
 	}
 
-	.restaurant__heading {
+	.restaurant__heading-1 {
 		@extend %shrikhand;
 		color: a.$cod-gray;
 		font-size: 28px;

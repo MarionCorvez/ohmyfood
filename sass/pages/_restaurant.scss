@@ -4,5 +4,29 @@
   ========================================
 */
 
-/* $Section
+@use '../abstracts' as a;
+
+/* $Section cover
    ==================================== */
+
+
+
+
+/* $Section restaurant
+   ==================================== */
+
+.section-restaurant {
+	padding: 32px 17px 40px 17px;
+}
+
+.restaurant {
+
+	&__headline {
+		@extend %flex--between;
+	}
+
+	&__heading-1 {
+		padding-right: 24px;
+	}
+
+}

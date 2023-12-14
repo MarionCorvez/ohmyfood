@@ -20,14 +20,21 @@
   $Flexbox
   ========================================
 */
-.section-header, .section-location, .section-cover {
+.header__logo, .section-location, .section-hero, .menu__box::after {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
-.section-cover {
+.restaurant__headline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-hero {
   flex-direction: column;
 }
 
@@ -130,30 +137,42 @@ body,
   font-weight: 500;
 }
 
-.section-cover__heading,
+.section-hero__heading,
 .heading-2,
-.heading-3 {
+.heading-3,
+.menu__pricing {
   font-weight: 700;
 }
 
-.section-cover__subtitle,
+.section-hero__subtitle,
 .card-restaurant__subhead,
-.cover__subtitle {
+.cover__subtitle,
+.menu__subhead {
   font-weight: 300;
 }
 
-.section-cover__heading,
+.section-hero__heading,
 .heading-2 {
   font-size: var(--f-size-xl);
 }
 
 .heading-3,
-.section-cover__subtitle {
+.section-hero__subtitle,
+.menu__heading {
   font-size: var(--f-size-l);
 }
 
 .card-restaurant__subhead {
   font-size: var(--f-size-m);
+}
+
+.restaurant__heading-2 {
+  font-size: var(--f-size-m);
+  font-weight: 300;
+  text-transform: uppercase;
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
+  padding-bottom: 5px;
 }
 
 .cover__subtitle {
@@ -168,7 +187,7 @@ body,
   font-family: "Shrikhand";
   src: local("Shrikhand"), url("../assets/fonts/Shrikhand-Regular.ttf");
 }
-.restaurant__heading, .footer__logo, .header__logo {
+.restaurant__heading-1, .footer__logo, .header__logo {
   font-family: "Shrikhand", serif;
   font-weight: 400;
 }
@@ -182,7 +201,7 @@ body,
   font-size: 18px;
 }
 
-.restaurant__heading {
+.restaurant__heading-1 {
   color: #101010;
   font-size: 28px;
 }
@@ -402,6 +421,169 @@ body,
    ==================================== */
 /*
   ========================================
+  $Form
+  ========================================
+*/
+legend {
+  padding: 0;
+  display: table;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 0;
+  padding: 0.01em 0 0 0;
+  margin: 40px 0 0 0;
+  min-width: 0;
+}
+
+.icon-heart--menu {
+  margin-right: 24px;
+}
+
+.main-cta--menu {
+  display: flex;
+  margin: 40px auto;
+}
+
+.card-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 0.94rem;
+  background: #fff;
+  margin-top: 12px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.menu__checkbox {
+  position: absolute;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+.menu__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 25px;
+  padding: 15px;
+  width: 100%;
+  cursor: pointer;
+}
+.menu__headline {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  overflow: hidden;
+  transition: margin-right 1s ease-in-out;
+}
+.menu__heading, .menu__subhead {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menu__pricing {
+  transition: transform 1s ease-in-out;
+}
+.menu__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  border-radius: 0 0.94rem 0.94rem 0rem;
+  background: #99E2D0;
+  width: 60px;
+  height: 100%;
+  transition: transform 1s ease-in-out;
+  transform: translateX(100%);
+}
+.menu__box::after {
+  content: "\f00c";
+  font: var(--fa-font-solid);
+  border-radius: 50% 50%;
+  background: #fff;
+  width: 1.15rem;
+  height: 1.15rem;
+  color: #99E2D0;
+  animation: spinningOut 1s ease-out;
+}
+
+.menu__checkbox:checked ~ * .menu__headline {
+  margin-right: 60px;
+}
+
+.menu__checkbox:checked ~ * .menu__pricing {
+  transform: translateX(-60px);
+}
+
+.menu__checkbox:checked ~ .menu__box {
+  transform: translateX(0);
+}
+
+.menu__checkbox:checked ~ .menu__box::after {
+  animation: spinningIn 700ms 200ms ease-in;
+}
+
+@keyframes crescendo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(0);
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+@keyframes spinningIn {
+  0% {
+    transform: rotate(360deg);
+    scale: 0;
+    opacity: 0;
+  }
+  10% {
+    transform: rotate(300deg);
+    scale: 0.3;
+    opacity: 0.3;
+  }
+  100% {
+    transform: rotate(0deg);
+    scale: 1;
+    opacity: 1;
+  }
+}
+@keyframes spinningOut {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+    scale: 1.5;
+  }
+  10% {
+    transform: rotate(10deg);
+    opacity: 1;
+    scale: 1.25;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+    scale: 0.3;
+  }
+}
+/*
+  ========================================
   $Homepage
   ========================================
 */
@@ -424,15 +606,14 @@ body,
   width: 150px;
 }
 
-/* $Section cover
+/* $Section hero
    ==================================== */
-.section-cover {
+.section-hero {
   background-color: #F6F6F6;
   padding: 39px 26px 57px 26px;
   text-align: center;
 }
-
-.section-cover__subtitle {
+.section-hero__subtitle {
   padding: 16px 0 27px 0;
 }
 
@@ -484,8 +665,18 @@ body,
   $Restaurant page
   ========================================
 */
-/* $Section
+/* $Section cover
    ==================================== */
+/* $Section restaurant
+   ==================================== */
+.section-restaurant {
+  padding: 32px 17px 40px 17px;
+}
+
+.restaurant__heading-1 {
+  padding-right: 24px;
+}
+
 /*
   ========================================
   $Header
@@ -494,10 +685,24 @@ body,
 /* $Variables
    ==================================== */
 .section-header {
+  display: grid;
+  grid-template-columns: 17px minmax(50px, 1fr) minmax(200px, 1fr) minmax(50px, 1fr) 17px;
+  align-items: center;
   position: relative;
   z-index: 2;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   padding: var(--pad-tb-xs) 0;
+}
+
+.header__link {
+  grid-column: 2/3;
+}
+.header__icon {
+  font-size: var(--f-size-xl);
+  color: #353535;
+}
+.header__logo {
+  grid-column: 3/-3;
 }
 
 /*

@@ -31,21 +31,20 @@
 
 
 
-/* $Section cover
+/* $Section hero
    ==================================== */
 
-.section-cover {
+.section-hero {
 	@extend %flex--center;
 	@extend %flex--column;
 	background-color: a.$wild-sand;
 	padding: 39px 26px 57px 26px;
 	text-align: center;
-}
 
-.section-cover__subtitle {
-	padding: 16px 0 27px 0;
+	&__subtitle {
+		padding: 16px 0 27px 0;
+	}
 }
-
 
 /* $Section operation
    ==================================== */
