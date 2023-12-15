@@ -1,0 +1,52 @@
+/// Icons
+
+@use '../abstracts' as a;
+
+.icon-heart {
+  position: relative;
+  z-index: 1;
+  background: transparent;
+  color: transparent;
+  font-size: 1.375rem;
+  -webkit-text-stroke: 0.75px a.$black;
+  cursor: pointer;
+
+  &:hover {
+  	&::after {
+	  	opacity: 1;
+	  	transform: scale(1);
+  	}
+		&::before {
+			opacity: 0;
+		}
+	}
+
+	&::before {
+		opacity: 1;
+		transition: opacity 600ms ease-in-out;
+	}
+  
+  &::after {
+		content: "\f004";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		opacity: 0;
+		z-index: -1;
+		background-clip: text !important;
+		-webkit-background-clip: text !important;
+		background: 
+		  linear-gradient(a.$medium-purple, a.$blush-pink);
+  	-webkit-text-stroke: 0.75px transparent;
+		transform: scale(0);
+		transition: 
+		  transform 300ms ease-in-out, 
+		  opacity 250ms 50ms ease-in-out;
+	}
+}
+
+.icon-heart--menu {
+	margin-right: 24px;
+}

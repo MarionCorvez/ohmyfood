@@ -28,17 +28,20 @@
 .header {
 
 	&__link {
-		grid-column: 2 / 3;	
+		grid-column: 2 / 3;
 	}
 
 	&__icon {
 		font-size: var(--f-size-xl);
 		color: a.$mine-shaft;
-	}
 
-	&__logo {
-		@extend %flex--center; // other solution?
-		grid-column: 3 / -3;
+		&:hover {
+			color: a.$medium-purple;
+		}
 	}
+}
 
+.logo--header {
+	@extend %flex--center; // other solution?
+	grid-column: 3 / -3;
 }

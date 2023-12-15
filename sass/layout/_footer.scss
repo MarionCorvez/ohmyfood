@@ -21,14 +21,14 @@
 	}
 }
 
-.footer {
-
-	&__logo {
-		@include a.bp(large) {
-			order: 2;
-			margin-left: 16px;
-		}
+.logo--footer {
+	@include a.bp(large) {
+		order: 2;
+		margin-left: 16px;
 	}
+}
+
+.footer {
 
 	&__list {
 		margin-top: 16px;

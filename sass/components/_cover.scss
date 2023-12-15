@@ -1,8 +1,21 @@
-/*
-  ========================================
-  $Cover
-  ========================================
-*/
+/// Cover
 
-/* $Variables
-   ==================================== */
+@use '../abstracts' as a;
+
+.section-cover {
+	position: relative;
+	z-index: -1;
+	margin-bottom: -7vh;
+}
+
+.cover__image {
+  max-height: 275px;
+
+  @include a.bp(small/medium) {
+  	max-height: 376px;
+  }
+
+  @include a.bp(large) {
+  	max-height: 478px;
+  }
+}

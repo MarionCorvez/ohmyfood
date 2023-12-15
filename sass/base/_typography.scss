@@ -87,6 +87,7 @@ body,
   src:
 		local("Shrikhand"),
     url("../assets/fonts/Shrikhand-Regular.ttf");
+  font-display: swap; // Ensure text remains visible during webfont load
 }
 
 %shrikhand {
@@ -94,19 +95,24 @@ body,
 	font-weight: 400;
 }
 
-	.header__logo {
-		@extend %shrikhand;
-		color: a.$cod-gray;
+.logo {
+	@extend %shrikhand;
+	color: a.$cod-gray;
+
+	&::selection {
+		color: a.$medium-purple;
+	}
+
+	&--header {
 		font-size: 30px;
 	}
 
-	.footer__logo {
-		@extend %shrikhand;
+	&--footer {
+		color: a.$white;
 		font-size: 18px;
 	}
+}
 
-	.restaurant__heading-1 {
-		@extend %shrikhand;
-		color: a.$cod-gray;
-		font-size: 28px;
-	}
+.restaurant__heading-1 {
+	font-size: 28px;
+}

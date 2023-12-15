@@ -22,7 +22,7 @@
 		<a href="../index.html" class="header__link">
 			<i class="fa-solid fa-arrow-left header__icon"></i>			
 		</a>
-		<p class="header__logo">ohmyfood</p>
+		<p class="logo logo--header">ohmyfood</p>
 	</header>
 
 
@@ -30,25 +30,44 @@
 
 		<!-- SECTION COVER -->
 		<section class="section-cover">
+
 			<picture>
 			  <source 
-			    media="(min-width: 768px)"
-			    srcset="../assets/images/la-palette-du-gout-large.webp">
-			  <img src="../assets/images/la-palette-du-gout-medium.webp" alt="Photo du plat phare du restaurant La palette du goût">
+			  	media="(min-width: 1024px)" 
+			  	srcset="../assets/images/la-palette-du-gout-large.webp" 
+			  	width=2000 
+			  	height=1333>
+			  <source 
+			  	media="(min-width: 768px)" 
+			  	srcset="../assets/images/la-palette-du-gout-medium.webp" 
+			  	width=1000 
+			  	height=666>
+			  <source 
+			  	media="(max-width: 767px)" 
+			  	srcset="../assets/images/la-palette-du-gout-small.webp" 
+			  	width=620 
+			  	height=413>
+			  <img 
+			  	src="../assets/images/la-palette-du-gout-medium.webp" 
+			  	alt="Photo du plat phare du restaurant La palette du goût" 
+			  	width=1000 
+			  	height=666
+			  	class="cover__image">
 			</picture>
+
 		</section>
 
 		<!-- SECTION RESTAURANT -->
 		<section class="section-restaurant">
 
 			<div class="restaurant__headline">
-				<h1 class="restaurant__heading-1">La palette du goût</h1>
-				<i class="fa-solid fa-heart icon-heart icon-heart--menu"></i>				
+				<h1 class="logo restaurant__heading-1">La palette du goût</h1>
+				<i class="fa-solid fa-heart icon-heart icon-heart--menu" aria-label="Retour à la page d'accueil"></i>				
 			</div>
 
 
 			<!-- Container Menu -->
-			<form action="" method="post" class="form-menu">
+			<form action="#" method="post" class="form-menu">
 
 				<!-- Menu des entrées -->
 				<fieldset>
@@ -177,7 +196,7 @@
 
 				</fieldset>
 
-				<button type="submit" class="main-cta main-cta--menu">Commander</button>
+				<button class="main-cta main-cta--menu">Commander</button>
 	
 			</form>
 
@@ -191,7 +210,7 @@
 
 		<div class="panel-footer">
 
-			<p class="footer__logo">ohmyfood</p>
+			<p class="logo logo--footer">ohmyfood</p>
 
 			<ul class="footer__list">
 				<li class="footer__item">
