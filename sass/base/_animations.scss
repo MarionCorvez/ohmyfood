@@ -37,3 +37,47 @@
 
 
 }
+
+// Menu animations
+
+@mixin transition-menu($property: transform) {
+  transition-duration: 500ms;
+  transition-property: $property;
+  transition-timing-function: ease-out;
+}
+
+// @include b.transition-menu();
+
+
+%slide-right {
+  transform: translateX(-100px); 
+  animation: 500ms linear both slide-right;
+}
+
+.panel-menu {
+
+  &--1 {
+    animation-delay: 1000ms;
+  }
+
+  &--2 {
+    animation-delay: 1300ms;
+  }
+
+  &--3 {
+    animation-delay: 1600ms;
+  }  
+
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-100px);
+  }
+  50% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}

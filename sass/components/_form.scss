@@ -5,6 +5,7 @@
 */
 
 @use '../abstracts' as a;
+@use '../base' as b;
 
 // Reset
 
@@ -14,17 +15,31 @@ legend {
 }
 
 fieldset {
-	display: flex;
-	flex-direction: column;
-	gap: 12px;
   border: 0;
   padding: 0.01em 0 0 0;
-  margin: 40px 0 0 0;
   min-width: 0;
 }
 
 
 // Menu
+
+.form-menu {
+	overflow: hidden;
+}
+
+// fieldset
+.panel-menu {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	@extend %slide-right;
+
+		@include a.bp(large) {
+			max-width: 634px;
+	    margin: 0 auto;
+		}
+
+}
 
 .card-menu {
   display: flex;
@@ -69,7 +84,7 @@ fieldset {
 	  flex-direction: column;
 	  gap: 5px;
 	  overflow: hidden;
-	  transition: margin-right 1s ease-in-out;
+	  @include b.transition-menu(margin-right);
 	}
 
 	&__heading,
@@ -80,7 +95,7 @@ fieldset {
 	}
 
 	&__pricing {
-	  transition: transform 1s ease-in-out;
+	  @include b.transition-menu();
 	}
 
 	&__box {
@@ -93,7 +108,7 @@ fieldset {
 	  background:#99E2D0;
 	  width: 60px;
 	  height: 100%;
-	  transition: transform 1s ease-in-out;
+	  @include b.transition-menu();
 	  transform: translateX(100%); 
 	}
 
@@ -106,7 +121,7 @@ fieldset {
 	  width: 1.15rem;
 	  height: 1.15rem;  
 	  color: a.$morning-glory;
-	  animation: spinningOut 1s ease-out;
+	  animation: spinningOut 500ms ease-out;
 	}
 
 }
@@ -124,7 +139,7 @@ fieldset {
 }
 
 .menu__checkbox:checked ~ .menu__box::after{
-  animation: spinningIn 700ms 200ms ease-in;
+  animation: spinningIn 450ms 50ms ease-in;
 }
 
 

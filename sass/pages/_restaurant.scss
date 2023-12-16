@@ -18,19 +18,37 @@
    ==================================== */
 
 .section-restaurant {
-	border-radius: 2.5rem 2.5rem 0 0;
-	background-color: a.$wild-sand;
-	padding: 42px 17px 40px 17px;
+	@extend %screen-menu;
 }
 
 .restaurant {
 
+	&__wrapper {
+	border-radius: 2.5rem 2.5rem 0 0;
+	background-color: a.$wild-sand;
+	padding: 42px var(--pad-m) 40px var(--pad-m);
+
+		@include a.bp(medium) {
+			margin: 0 var(--pad-b);			
+		}
+	}
+
 	&__headline {
 		@extend %flex--between;
+		@include a.bp(large) {
+			justify-content: center;
+		}
 	}
 
 	&__heading-1 {
 		padding-right: 24px;
+	}
+
+	&__heading-2 {
+		display: inline-block;
+		border-bottom: 3px solid a.$morning-glory;
+		width: 40px;
+		padding: 40px 0 5px 0;
 	}
 
 }
