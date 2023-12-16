@@ -1,15 +1,10 @@
-/*
-  ========================================
-  $Homepage
-  ========================================
-*/
+/// Homepage
 
 @use '../abstracts' as a;
 @use '../base' as b;
 
 
-/* $Section location
-   ==================================== */
+// Section location
 
 .section-location {
 	@extend %flex--center;
@@ -30,9 +25,7 @@
 	}
 
 
-
-/* $Section hero
-   ==================================== */
+// Section hero
 
 .section-hero {
 	@extend %flex--center;
@@ -46,8 +39,7 @@
 	}
 }
 
-/* $Section operation
-   ==================================== */
+// Section operation
 
 .section-operation {
 	@extend %screen-main;
@@ -64,13 +56,10 @@
 			flex-direction: row;
 			justify-content: space-between;
 		}
-
 	}
 
 
-
-/* $Section restaurants
-   ==================================== */
+// Section restaurants
 
 .section-restaurants {
 	background-color: a.$wild-sand;

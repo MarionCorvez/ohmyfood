@@ -1,13 +1,7 @@
-/*
-  ========================================
-  $Header
-  ========================================
-*/
-
-/* $Variables
-   ==================================== */
+/// Header
 
 @use '../abstracts' as a;
+
 
 .section-header {
 	display: grid;
@@ -23,7 +17,6 @@
 	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 	padding: var(--pad-tb-xs) 0;
 }
-
 
 .header {
 

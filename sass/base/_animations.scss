@@ -1,83 +1,113 @@
-/*
-  ========================================
-  $Animations
-  ========================================
-*/
+/// Animations
 
-/* $Variables
-   ==================================== */
 
-@media (prefers-reduced-motion: no-preference) {
+// Loader
 
-  .btn {
-    // 'vibrate' keyframes are defined elsewhere
-    animation: vibrate 0.3s linear infinite both;
+@mixin loader($name: loader-2) {
+  animation: $name 800ms infinite;
+}
+
+@keyframes loader-1 {
+  0% {
+    transform: scale(0);
   }
-
-  .some-element {
-    animation: bounce 1200ms;
+  100% {
+    transform: scale(1);
   }
-
-// base pour l'affichage du menu coché
-.btn-4:active + .box-2 {
-  transform: translate(0, 0);
+}
+@keyframes loader-3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes loader-2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
 }
 
-.box-2 {
-  background-color: #3e3e3e;
-  color: #fff;
-  margin-top: 3rem;
 
-  width: 100px;
-  height: 100px;
-  // ou transform-origin: right;
-  transform: translate(100%, 0);
-  transition: transform 330ms ease-in-out;
-}
+// Dish selection
 
-
-}
-
-// Menu animations
-
-@mixin transition-menu($property: transform) {
+@mixin select-dish($property: transform) {
   transition-duration: 500ms;
   transition-property: $property;
   transition-timing-function: ease-out;
 }
 
-// @include b.transition-menu();
 
+// Pin rotation
+
+%pin-rotate {
+  animation: pin-rotate 450ms 50ms ease-in;
+}
+
+@keyframes pin-rotate {
+  0% {
+    transform: rotate(360deg);
+    scale: 0;
+    opacity: 0;
+  }
+  10% {
+    transform: rotate(300deg);
+    scale: 0.25;
+    opacity: 0.25;
+  }
+  100% {
+    transform: rotate(0deg);
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+
+%pin-rotate-back {
+  animation: pin-rotate-back 450ms 50ms ease-out;
+}
+
+@keyframes pin-rotate-back {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+    scale: 1.5;
+  }
+  10% {
+    transform: rotate(10deg);
+    opacity: 1;
+    scale: 1.25;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+    scale: 0.25;
+  }
+}
+
+
+// Menu display
 
 %slide-right {
   transform: translateX(-100px); 
   animation: 500ms linear both slide-right;
 }
-
-.panel-menu {
-
-  &--1 {
-    animation-delay: 1000ms;
-  }
-
-  &--2 {
-    animation-delay: 1300ms;
-  }
-
-  &--3 {
-    animation-delay: 1600ms;
-  }  
-
-}
-
+ 
 @keyframes slide-right {
   0% {
+    opacity: 0;
     transform: translateX(-100px);
   }
   50% {
+    opacity: 0.8;
     transform: translateX(-50px);
   }
   100% {
+    opacity: 1;
     transform: translateX(0px);
   }
 }

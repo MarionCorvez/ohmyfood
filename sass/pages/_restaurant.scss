@@ -1,21 +1,9 @@
-/*
-  ========================================
-  $Restaurant page
-  ========================================
-*/
+// Restaurant page
 
 @use '../abstracts' as a;
 
-/* $Section cover
-   ==================================== */
 
-.section-cover {
-	
-}
-
-
-/* $Section restaurant
-   ==================================== */
+// Section restaurant
 
 .section-restaurant {
 	@extend %screen-menu;

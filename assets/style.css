@@ -5,11 +5,6 @@
   --pad-xb:	clamp(60px, 3vh, 30px);
 }
 
-/*
-  ========================================
-  $Layout
-  ========================================
-*/
 .section-operation, .section-restaurants > * {
   max-width: 1080px;
   margin: 0 auto;
@@ -20,11 +15,6 @@
   margin: 0 auto;
 }
 
-/*
-  ========================================
-  $Flexbox
-  ========================================
-*/
 .logo--header, .section-location, .section-hero, .menu__box::after {
   display: flex;
   flex-wrap: wrap;
@@ -43,11 +33,6 @@
   flex-direction: column;
 }
 
-/*
-  ========================================
-  $Grid layout
-  ========================================
-*/
 /*
   ========================================
   $Reset
@@ -213,31 +198,70 @@ body,
   font-size: 28px;
 }
 
-/*
-  ========================================
-  $Animations
-  ========================================
-*/
-/* $Variables
-   ==================================== */
-@media (prefers-reduced-motion: no-preference) {
-  .btn {
-    animation: vibrate 0.3s linear infinite both;
+@keyframes loader-1 {
+  0% {
+    transform: scale(0);
   }
-  .some-element {
-    animation: bounce 1200ms;
+  100% {
+    transform: scale(1);
   }
-  .btn-4:active + .box-2 {
+}
+@keyframes loader-3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes loader-2 {
+  0% {
     transform: translate(0, 0);
   }
-  .box-2 {
-    background-color: #3e3e3e;
-    color: #fff;
-    margin-top: 3rem;
-    width: 100px;
-    height: 100px;
-    transform: translate(100%, 0);
-    transition: transform 330ms ease-in-out;
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+.menu__checkbox:checked ~ .menu__box::after {
+  animation: pin-rotate 450ms 50ms ease-in;
+}
+
+@keyframes pin-rotate {
+  0% {
+    transform: rotate(360deg);
+    scale: 0;
+    opacity: 0;
+  }
+  10% {
+    transform: rotate(300deg);
+    scale: 0.25;
+    opacity: 0.25;
+  }
+  100% {
+    transform: rotate(0deg);
+    scale: 1;
+    opacity: 1;
+  }
+}
+.menu__box::after {
+  animation: pin-rotate-back 450ms 50ms ease-out;
+}
+
+@keyframes pin-rotate-back {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+    scale: 1.5;
+  }
+  10% {
+    transform: rotate(10deg);
+    opacity: 1;
+    scale: 1.25;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+    scale: 0.25;
   }
 }
 .panel-menu {
@@ -245,24 +269,17 @@ body,
   animation: 500ms linear both slide-right;
 }
 
-.panel-menu--1 {
-  animation-delay: 1000ms;
-}
-.panel-menu--2 {
-  animation-delay: 1300ms;
-}
-.panel-menu--3 {
-  animation-delay: 1600ms;
-}
-
 @keyframes slide-right {
   0% {
+    opacity: 0;
     transform: translateX(-100px);
   }
   50% {
+    opacity: 0.8;
     transform: translateX(-50px);
   }
   100% {
+    opacity: 1;
     transform: translateX(0px);
   }
 }
@@ -273,6 +290,49 @@ body,
 */
 /* $Variables
    ==================================== */
+.modal {
+  position: fixed;
+  display: grid;
+  z-index: 98;
+  width: 100vw;
+  height: 100vh;
+  background-color: #353535;
+  color: #fff;
+}
+
+.loader {
+  margin: auto;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.loader div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.loader div:nth-child(1) {
+  left: 8px;
+  animation: loader-1 800ms infinite;
+}
+.loader div:nth-child(2) {
+  left: 8px;
+  animation: loader-2 800ms infinite;
+}
+.loader div:nth-child(3) {
+  left: 32px;
+  animation: loader-2 800ms infinite;
+}
+.loader div:nth-child(4) {
+  left: 56px;
+  animation: loader-3 800ms infinite;
+}
+
 .main-cta {
   position: relative;
   z-index: 1;
@@ -426,7 +486,7 @@ body,
   position: absolute;
   top: 15px;
   right: 15px;
-  z-index: 99;
+  z-index: 5;
   background-color: #99E2D0;
   padding: 7px 9px;
   color: #023B31;
@@ -471,11 +531,6 @@ body,
 */
 /* $Variables
    ==================================== */
-/*
-  ========================================
-  $Form
-  ========================================
-*/
 legend {
   padding: 0;
   display: table;
@@ -495,6 +550,15 @@ fieldset {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+.panel-menu--1 {
+  animation-delay: 1000ms;
+}
+.panel-menu--2 {
+  animation-delay: 1300ms;
+}
+.panel-menu--3 {
+  animation-delay: 1600ms;
 }
 @media screen and (width > 1024px) {
   .panel-menu {
@@ -577,7 +641,6 @@ fieldset {
   width: 1.15rem;
   height: 1.15rem;
   color: #99E2D0;
-  animation: spinningOut 500ms ease-out;
 }
 
 .menu__checkbox:checked ~ * .menu__headline {
@@ -592,64 +655,6 @@ fieldset {
   transform: translateX(0);
 }
 
-.menu__checkbox:checked ~ .menu__box::after {
-  animation: spinningIn 450ms 50ms ease-in;
-}
-
-@keyframes crescendo {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    transform: translateX(0);
-    opacity: 0.7;
-  }
-  100% {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-}
-@keyframes spinningIn {
-  0% {
-    transform: rotate(360deg);
-    scale: 0;
-    opacity: 0;
-  }
-  10% {
-    transform: rotate(300deg);
-    scale: 0.3;
-    opacity: 0.3;
-  }
-  100% {
-    transform: rotate(0deg);
-    scale: 1;
-    opacity: 1;
-  }
-}
-@keyframes spinningOut {
-  0% {
-    transform: rotate(0deg);
-    opacity: 1;
-    scale: 1.5;
-  }
-  10% {
-    transform: rotate(10deg);
-    opacity: 1;
-    scale: 1.25;
-  }
-  100% {
-    transform: rotate(360deg);
-    opacity: 0;
-    scale: 0.3;
-  }
-}
-/*
-  ========================================
-  $Homepage
-  ========================================
-*/
-/* $Section location
-   ==================================== */
 .section-location {
   background-color: #EAEAEA;
   padding: 15px 0;
@@ -667,8 +672,6 @@ fieldset {
   width: 150px;
 }
 
-/* $Section hero
-   ==================================== */
 .section-hero {
   background-color: #F6F6F6;
   padding: 39px 26px 57px 26px;
@@ -678,8 +681,6 @@ fieldset {
   padding: 16px 0 27px 0;
 }
 
-/* $Section operation
-   ==================================== */
 .section-operation {
   padding: 48px var(--pad-m) 68px var(--pad-m);
 }
@@ -697,8 +698,6 @@ fieldset {
   }
 }
 
-/* $Section restaurants
-   ==================================== */
 .section-restaurants {
   background-color: #F6F6F6;
   padding-top: var(--pad-xb);
@@ -721,15 +720,6 @@ fieldset {
   }
 }
 
-/*
-  ========================================
-  $Restaurant page
-  ========================================
-*/
-/* $Section cover
-   ==================================== */
-/* $Section restaurant
-   ==================================== */
 .restaurant__wrapper {
   border-radius: 2.5rem 2.5rem 0 0;
   background-color: #F6F6F6;
@@ -755,13 +745,6 @@ fieldset {
   padding: 40px 0 5px 0;
 }
 
-/*
-  ========================================
-  $Header
-  ========================================
-*/
-/* $Variables
-   ==================================== */
 .section-header {
   display: grid;
   grid-template-columns: 17px minmax(50px, 1fr) minmax(200px, 1fr) minmax(50px, 1fr) 17px;

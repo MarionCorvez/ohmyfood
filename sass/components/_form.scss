@@ -1,11 +1,8 @@
-/*
-  ========================================
-  $Form
-  ========================================
-*/
+/// Form
 
 @use '../abstracts' as a;
 @use '../base' as b;
+
 
 // Reset
 
@@ -34,11 +31,22 @@ fieldset {
 	gap: 12px;
 	@extend %slide-right;
 
-		@include a.bp(large) {
-			max-width: 634px;
-	    margin: 0 auto;
-		}
+  &--1 {
+    animation-delay: 1000ms;
+  }
 
+  &--2 {
+    animation-delay: 1300ms;
+  }
+
+  &--3 {
+    animation-delay: 1600ms;
+  }  
+
+	@include a.bp(large) {
+		max-width: 634px;
+	  margin: 0 auto;
+	}
 }
 
 .card-menu {
@@ -84,7 +92,7 @@ fieldset {
 	  flex-direction: column;
 	  gap: 5px;
 	  overflow: hidden;
-	  @include b.transition-menu(margin-right);
+	  @include b.select-dish(margin-right);
 	}
 
 	&__heading,
@@ -95,7 +103,7 @@ fieldset {
 	}
 
 	&__pricing {
-	  @include b.transition-menu();
+	  @include b.select-dish();
 	}
 
 	&__box {
@@ -108,7 +116,7 @@ fieldset {
 	  background:#99E2D0;
 	  width: 60px;
 	  height: 100%;
-	  @include b.transition-menu();
+	  @include b.select-dish();
 	  transform: translateX(100%); 
 	}
 
@@ -121,9 +129,8 @@ fieldset {
 	  width: 1.15rem;
 	  height: 1.15rem;  
 	  color: a.$morning-glory;
-	  animation: spinningOut 500ms ease-out;
+		@extend %pin-rotate-back;
 	}
-
 }
 
 .menu__checkbox:checked ~ * .menu__headline {
@@ -138,61 +145,6 @@ fieldset {
   transform: translateX(0);
 }
 
-.menu__checkbox:checked ~ .menu__box::after{
-  animation: spinningIn 450ms 50ms ease-in;
-}
-
-
-
-
-// keyframes
-
-@keyframes crescendo {
-  0% {
-    opacity: 1;
-    
-  }
-  50% {
-    transform: translateX(0);
-    opacity: 0.7;
-  }
-  100% {
-    opacity: 0;
-    transform:translateX(100%);
-  }
-}
-@keyframes spinningIn {
-  0% {
-    transform: rotate(360deg);
-    scale:0;
-    opacity:0;
-  }
-  10% {
-    transform: rotate(300deg);
-    scale:0.3;
-    opacity:0.3;
-  }
-  100% {
-    transform: rotate(0deg);
-    scale:1;
-    opacity:1;
-  }
-}
-
-@keyframes spinningOut {
-  0% {
-    transform: rotate(0deg);
-    opacity: 1;
-    scale: 1.5;
-  }
-  10% {
-    transform: rotate(10deg);
-    opacity: 1;
-    scale: 1.25;
-  }
-  100% {
-    transform: rotate(360deg);
-    opacity: 0;
-    scale: 0.3;
-  }
+.menu__checkbox:checked ~ .menu__box::after {
+	@extend %pin-rotate;
 }

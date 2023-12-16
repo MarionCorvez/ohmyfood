@@ -1,0 +1,51 @@
+/// Loader
+
+@use '../abstracts' as a;
+@use '../base' as b;
+
+.modal {
+  position: fixed;
+  display: grid;
+  z-index: 98;
+  width: 100vw;
+  height: 100vh;
+  background-color: a.$mine-shaft;
+  color: a.$white;
+}
+
+.loader {
+  margin: auto;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.loader div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+
+	&:nth-child(1) {
+  	left: 8px;
+  	@include b.loader(loader-1);
+	}
+
+	&:nth-child(2) {
+	  left: 8px;
+  	@include b.loader();
+	}
+
+	&:nth-child(3) {
+	  left: 32px;
+  	@include b.loader();
+	}
+
+	&:nth-child(4) {
+  	left: 56px;
+  	@include b.loader(loader-3);
+  }
+}

@@ -1,11 +1,7 @@
 /// Placeholders
 
 
-/*
-  ========================================
-  $Layout
-  ========================================
-*/
+// Layout
 
 %screen-main {
   max-width: 1080px;
@@ -18,11 +14,7 @@
 }
 
 
-/*
-  ========================================
-  $Flexbox
-  ========================================
-*/
+// Flexbox
 
 %flex--center {
 	display: flex;
@@ -41,26 +33,3 @@
 %flex--column {
   flex-direction: column;
 }
-
-// vérifier si utilisé
-%wrapper-flex {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-
-/*
-  ========================================
-  $Grid layout
-  ========================================
-*/
-
-
-// vérifier si utilisé
-/// Placeholder grid
-%wrapper-grid {
-  display: grid;
-  gap: 2rem;
-}
-
