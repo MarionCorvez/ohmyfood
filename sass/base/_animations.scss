@@ -34,7 +34,7 @@
 
 @keyframes loader--stop {
   from {
-      transform:scale(1)
+      transform: scale(1)
   }
   to { 
       transform: scale(0);
@@ -58,18 +58,15 @@
 
 @keyframes pin-rotate {
   0% {
-    transform: rotate(360deg);
-    scale: 0;
+    transform: rotate(360deg) scale(0);
     opacity: 0;
   }
   10% {
-    transform: rotate(300deg);
-    scale: 0.25;
+    transform: rotate(300deg) scale(0.25);
     opacity: 0.25;
   }
   100% {
-    transform: rotate(0deg);
-    scale: 1;
+    transform: rotate(0deg) scale(1);
     opacity: 1;
   }
 }
@@ -81,19 +78,16 @@
 
 @keyframes pin-rotate-back {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(0deg) scale(1.5);
     opacity: 1;
-    scale: 1.5;
   }
   10% {
-    transform: rotate(10deg);
+    transform: rotate(10deg) scale(1.25);
     opacity: 1;
-    scale: 1.25;
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(360deg) scale(0.25);
     opacity: 0;
-    scale: 0.25;
   }
 }
 
