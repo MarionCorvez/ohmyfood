@@ -11,6 +11,7 @@
   height: 100vh;
   background-color: a.$mine-shaft;
   color: a.$white;
+  animation: loader--stop 400ms 2000ms forwards;  
 }
 
 .loader {

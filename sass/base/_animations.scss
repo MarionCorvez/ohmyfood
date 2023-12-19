@@ -32,6 +32,14 @@
   }
 }
 
+@keyframes loader--stop {
+  from {
+      transform:scale(1)
+  }
+  to { 
+      transform: scale(0);
+  }
+}
 
 // Dish selection
 

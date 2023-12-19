@@ -222,6 +222,14 @@ body,
     transform: translate(24px, 0);
   }
 }
+@keyframes loader--stop {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
 .menu__checkbox:checked ~ .menu__box::after {
   animation: pin-rotate 450ms 50ms ease-in;
 }
@@ -298,6 +306,7 @@ body,
   height: 100vh;
   background-color: #353535;
   color: #fff;
+  animation: loader--stop 400ms 2000ms forwards;
 }
 
 .loader {
