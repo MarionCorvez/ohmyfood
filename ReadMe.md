@@ -2,7 +2,7 @@
 
 
 - [Lien vers le repository GitHub](https://marioncorvez.github.io/ohmyfood/)
-- [Lien de la version en ligne du site Internet]https://github.com/MarionCorvez/ohmyfood
+- [Lien de la version en ligne du site Internet](https://github.com/MarionCorvez/ohmyfood)
 
 
 ## Sommaire
