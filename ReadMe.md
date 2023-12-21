@@ -6,10 +6,10 @@ Retrouvez la version en ligne ici:
 
 ## Sommaire
 
-- [Étapes du projet](#-etapes-du-projet)
-- [Technologies](#-technologies)
-- [Compatibilité](#-compatibilite)
-- [Livrables attendus](#-livrables-attendus)
+- [Étapes du projet](##-etapes-du-projet)
+- [Technologies](##-technologies)
+- [Compatibilité](##-compatibilite)
+- [Livrables attendus](##-livrables-attendus)
 
 
 ## Étapes du projet
