@@ -1,7 +1,8 @@
 # Ohmyfood
 
-Retrouvez la version en ligne ici:
-[GitHub Pages](https://marioncorvez.github.io/ohmyfood/)
+
+- [Lien vers le repository GitHub](https://marioncorvez.github.io/ohmyfood/)
+- [Lien de la version en ligne du site Internet]https://github.com/MarionCorvez/ohmyfood
 
 
 ## Sommaire
