@@ -106,6 +106,7 @@ img::after {
   ========================================
 */
 :root {
+  --f-size-xs: clamp(0.875rem, 0.455vw + 0.761rem, 1.125rem);
   --f-size-s: clamp(1rem, 0.227vw + 0.943rem, 1.125rem);
   --f-size-m: clamp(1.063rem, 0.227vw + 1.006rem, 1.188rem);
   --f-size-l: clamp(1.125rem, 0.227vw + 1.068rem, 1.25rem);
@@ -160,6 +161,10 @@ body,
   font-size: var(--f-size-m);
   font-weight: 300;
   text-transform: uppercase;
+}
+
+.menu__subhead {
+  font-size: var(--f-size-xs);
 }
 
 .cover__subtitle {
@@ -300,7 +305,7 @@ body,
   height: 100vh;
   background-color: #353535;
   color: #fff;
-  animation: loader--stop 400ms 2000ms forwards;
+  animation: loader--stop 400ms 1000ms forwards;
 }
 
 .loader {
@@ -597,8 +602,8 @@ fieldset {
   display: flex;
   justify-content: space-between;
   align-items: end;
-  gap: 20px;
-  padding: 13px;
+  gap: 15px;
+  padding: 18px;
   width: 100%;
   cursor: pointer;
 }

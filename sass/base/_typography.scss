@@ -9,6 +9,8 @@
 // $Variables
 
 :root {
+
+	--f-size-xs: clamp(0.875rem, 0.455vw + 0.761rem, 1.125rem);
   --f-size-s: clamp(1rem, 0.227vw + 0.943rem, 1.125rem);    	// body: 16px
 	--f-size-m: clamp(1.063rem, 0.227vw + 1.006rem, 1.188rem);	// 17px
 	--f-size-l: clamp(1.125rem, 0.227vw + 1.068rem, 1.25rem);		// 18px
@@ -56,7 +58,6 @@ body,
 	font-size: var(--f-size-l);
 }
 
-
 .card-restaurant__subhead {
 	font-size: var(--f-size-m);
 }
@@ -65,6 +66,10 @@ body,
 	font-size: var(--f-size-m);
 	font-weight: 300;
 	text-transform: uppercase;
+}
+
+.menu__subhead {
+	font-size: var(--f-size-xs);
 }
 
 .cover__subtitle {
