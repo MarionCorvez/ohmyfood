@@ -4,7 +4,7 @@
 // Loader
 
 @mixin loader($name: loader-2) {
-  animation: $name 800ms infinite;
+  animation: $name 800ms ease-in-out infinite;
 }
 
 @keyframes loader-1 {
@@ -15,6 +15,17 @@
     transform: scale(1);
   }
 }
+
+@keyframes loader-2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(25px);
+  }
+}
+
+// loader--disappear
 @keyframes loader-3 {
   0% {
     transform: scale(1);
@@ -23,23 +34,7 @@
     transform: scale(0);
   }
 }
-@keyframes loader-2 {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(24px, 0);
-  }
-}
 
-@keyframes loader--stop {
-  from {
-      transform: scale(1)
-  }
-  to { 
-      transform: scale(0);
-  }
-}
 
 // Dish selection
 
@@ -47,48 +42,6 @@
   transition-duration: 500ms;
   transition-property: $property;
   transition-timing-function: ease-out;
-}
-
-
-// Pin rotation
-
-%pin-rotate {
-  animation: pin-rotate 450ms 50ms ease-in;
-}
-
-@keyframes pin-rotate {
-  0% {
-    transform: rotate(360deg) scale(0);
-    opacity: 0;
-  }
-  10% {
-    transform: rotate(300deg) scale(0.25);
-    opacity: 0.25;
-  }
-  100% {
-    transform: rotate(0deg) scale(1);
-    opacity: 1;
-  }
-}
-
-
-%pin-rotate-back {
-  animation: pin-rotate-back 450ms 50ms ease-out;
-}
-
-@keyframes pin-rotate-back {
-  0% {
-    transform: rotate(0deg) scale(1.5);
-    opacity: 1;
-  }
-  10% {
-    transform: rotate(10deg) scale(1.25);
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(360deg) scale(0.25);
-    opacity: 0;
-  }
 }
 
 

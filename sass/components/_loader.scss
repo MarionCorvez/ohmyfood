@@ -11,7 +11,7 @@
   height: 100vh;
   background-color: a.$mine-shaft;
   color: a.$white;
-  animation: loader--stop 400ms 1000ms forwards;  
+  animation: loader-3 400ms 1000ms forwards;  
 }
 
 .loader {
@@ -23,30 +23,29 @@
 
 .loader div {
   position: absolute;
-  top: 33px;
+  top: 30px;
   width: 13px;
   height: 13px;
   border-radius: 50%;
   background: #fff;
-  animation-timing-function: cubic-bezier(0, 1, 1, 0);
 
 	&:nth-child(1) {
-  	left: 8px;
+  	left: 10px;
   	@include b.loader(loader-1);
 	}
 
 	&:nth-child(2) {
-	  left: 8px;
+	  left: 10px;
   	@include b.loader();
 	}
 
 	&:nth-child(3) {
-	  left: 32px;
+	  left: 35px;
   	@include b.loader();
 	}
 
 	&:nth-child(4) {
-  	left: 56px;
+  	left: 60px;
   	@include b.loader(loader-3);
   }
 }

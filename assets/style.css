@@ -15,7 +15,7 @@
   margin: 0 auto;
 }
 
-.logo--header, .section-location, .section-hero, .menu__box::after {
+.section-location, .section-hero, .menu__box::after, .logo--header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -211,64 +211,20 @@ body,
     transform: scale(1);
   }
 }
+@keyframes loader-2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(25px);
+  }
+}
 @keyframes loader-3 {
   0% {
     transform: scale(1);
   }
   100% {
     transform: scale(0);
-  }
-}
-@keyframes loader-2 {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(24px, 0);
-  }
-}
-@keyframes loader--stop {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(0);
-  }
-}
-.menu__checkbox:checked ~ .menu__box::after {
-  animation: pin-rotate 450ms 50ms ease-in;
-}
-
-@keyframes pin-rotate {
-  0% {
-    transform: rotate(360deg) scale(0);
-    opacity: 0;
-  }
-  10% {
-    transform: rotate(300deg) scale(0.25);
-    opacity: 0.25;
-  }
-  100% {
-    transform: rotate(0deg) scale(1);
-    opacity: 1;
-  }
-}
-.menu__box::after {
-  animation: pin-rotate-back 450ms 50ms ease-out;
-}
-
-@keyframes pin-rotate-back {
-  0% {
-    transform: rotate(0deg) scale(1.5);
-    opacity: 1;
-  }
-  10% {
-    transform: rotate(10deg) scale(1.25);
-    opacity: 1;
-  }
-  100% {
-    transform: rotate(360deg) scale(0.25);
-    opacity: 0;
   }
 }
 .panel-menu {
@@ -290,13 +246,95 @@ body,
     transform: translateX(0px);
   }
 }
+.section-header {
+  display: grid;
+  grid-template-columns: 17px minmax(50px, 1fr) minmax(200px, 1fr) minmax(50px, 1fr) 17px;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  padding: var(--pad-tb-xs) 0;
+}
+
+.header__link {
+  grid-column: 2/3;
+}
+.header__icon {
+  font-size: var(--f-size-xl);
+  color: #353535;
+}
+.header__icon:hover {
+  color: #9356DC;
+}
+
+.logo--header {
+  grid-column: 3/-3;
+}
+
 /*
   ========================================
-  $Navigation
+  $Footer
   ========================================
 */
-/* $Variables
-   ==================================== */
+.section-footer {
+  padding: var(--pad-m) var(--pad-b);
+  background-color: #353535;
+  color: #fff;
+}
+
+@media screen and (width > 1024px) {
+  .panel-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: baseline;
+  }
+}
+
+@media screen and (width > 1024px) {
+  .logo--footer {
+    order: 2;
+    margin-left: 16px;
+  }
+}
+
+.footer__list {
+  margin-top: 16px;
+}
+@media screen and (width >= 768px) {
+  .footer__list {
+    display: flex;
+  }
+}
+@media screen and (width > 1024px) {
+  .footer__list {
+    margin-top: 0;
+  }
+}
+.footer__item {
+  padding-top: 7px;
+}
+@media screen and (width >= 768px) {
+  .footer__item {
+    padding-top: 0;
+    padding-right: 24px;
+  }
+}
+.footer__icon {
+  fill: #fff;
+}
+.footer__link--icon {
+  padding-left: 11px;
+}
+
+.footer__item:hover .footer__link {
+  color: #9356DC;
+}
+
+.footer__item:hover .footer__icon {
+  fill: #9356DC;
+}
+
 .modal {
   position: fixed;
   display: grid;
@@ -305,7 +343,7 @@ body,
   height: 100vh;
   background-color: #353535;
   color: #fff;
-  animation: loader--stop 400ms 1000ms forwards;
+  animation: loader-3 400ms 1000ms forwards;
 }
 
 .loader {
@@ -317,28 +355,27 @@ body,
 
 .loader div {
   position: absolute;
-  top: 33px;
+  top: 30px;
   width: 13px;
   height: 13px;
   border-radius: 50%;
   background: #fff;
-  animation-timing-function: cubic-bezier(0, 1, 1, 0);
 }
 .loader div:nth-child(1) {
-  left: 8px;
-  animation: loader-1 800ms infinite;
+  left: 10px;
+  animation: loader-1 800ms ease-in-out infinite;
 }
 .loader div:nth-child(2) {
-  left: 8px;
-  animation: loader-2 800ms infinite;
+  left: 10px;
+  animation: loader-2 800ms ease-in-out infinite;
 }
 .loader div:nth-child(3) {
-  left: 32px;
-  animation: loader-2 800ms infinite;
+  left: 35px;
+  animation: loader-2 800ms ease-in-out infinite;
 }
 .loader div:nth-child(4) {
-  left: 56px;
-  animation: loader-3 800ms infinite;
+  left: 60px;
+  animation: loader-3 800ms ease-in-out infinite;
 }
 
 .main-cta {
@@ -532,13 +569,6 @@ body,
   }
 }
 
-/*
-  ========================================
-  $Thumbnails
-  ========================================
-*/
-/* $Variables
-   ==================================== */
 legend {
   padding: 0;
   display: table;
@@ -751,95 +781,6 @@ fieldset {
   border-bottom: 3px solid #99E2D0;
   width: 40px;
   padding: 40px 0 5px 0;
-}
-
-.section-header {
-  display: grid;
-  grid-template-columns: 17px minmax(50px, 1fr) minmax(200px, 1fr) minmax(50px, 1fr) 17px;
-  align-items: center;
-  position: relative;
-  z-index: 2;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-  padding: var(--pad-tb-xs) 0;
-}
-
-.header__link {
-  grid-column: 2/3;
-}
-.header__icon {
-  font-size: var(--f-size-xl);
-  color: #353535;
-}
-.header__icon:hover {
-  color: #9356DC;
-}
-
-.logo--header {
-  grid-column: 3/-3;
-}
-
-/*
-  ========================================
-  $Footer
-  ========================================
-*/
-.section-footer {
-  padding: var(--pad-m) var(--pad-b);
-  background-color: #353535;
-  color: #fff;
-}
-
-@media screen and (width > 1024px) {
-  .panel-footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: baseline;
-  }
-}
-
-@media screen and (width > 1024px) {
-  .logo--footer {
-    order: 2;
-    margin-left: 16px;
-  }
-}
-
-.footer__list {
-  margin-top: 16px;
-}
-@media screen and (width >= 768px) {
-  .footer__list {
-    display: flex;
-  }
-}
-@media screen and (width > 1024px) {
-  .footer__list {
-    margin-top: 0;
-  }
-}
-.footer__item {
-  padding-top: 7px;
-}
-@media screen and (width >= 768px) {
-  .footer__item {
-    padding-top: 0;
-    padding-right: 24px;
-  }
-}
-.footer__icon {
-  fill: #fff;
-}
-.footer__link--icon {
-  padding-left: 11px;
-}
-
-.footer__item:hover .footer__link {
-  color: #9356DC;
-}
-
-.footer__item:hover .footer__icon {
-  fill: #9356DC;
 }
 
 /*# sourceMappingURL=style.css.map */

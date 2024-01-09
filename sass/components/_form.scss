@@ -129,7 +129,6 @@ fieldset {
 	  width: 1.15rem;
 	  height: 1.15rem;  
 	  color: a.$morning-glory;
-		@extend %pin-rotate-back;
 	}
 }
 
@@ -143,8 +142,4 @@ fieldset {
 
 .menu__checkbox:checked ~ .menu__box {
   transform: translateX(0);
-}
-
-.menu__checkbox:checked ~ .menu__box::after {
-	@extend %pin-rotate;
 }
